@@ -16,7 +16,7 @@ const sendWelcomeEmail=(email,name)=>{
         to:email,
         from:"gagandeepvashisht96@gmail.com",
         subject:"Welcome to our app",
-        text:`Welcome to the app, $(name). Let e know how you get along with the app` 
+        text:`Welcome to the app, ${name}. Let e know how you get along with the app` 
     });
 }
 const sendCancelationEmail=(email,name)=>{
@@ -24,7 +24,7 @@ const sendCancelationEmail=(email,name)=>{
         to:email,
         from:"gagandeepvashisht96@gmail.com",
         subject:"Sorry to see you go",
-        text:`GoodBye $(name). I hope to see to back sometime soon` 
+        text:'GoodBye ${name}. I hope to see to back sometime soon' 
     });
 }
 module.exports={
